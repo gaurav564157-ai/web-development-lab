@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <title>Time table</title> 
+    <style>
+        body{
+            font-family:Arial,sans-serif;
+
+        }
+
+    table{
+        width:80%;
+        margin:20px auto;
+        border-collapse:collapse;
+
+    }
+    th,
+    td{
+        border:1px soild #ddd;
+        padding:8px;
+        text-align:center;
+    }
+    th{
+        background-color: #f35a5a;
+        color:blue;
+    }
+    tr:nth-child(even){
+        background-color: #20;
+    }
+    tr:nth-child(odd){
+        background-color: #379494;
+    }
+    .lab-hour{
+        background-color: #961313;
+    }
+    .elective-hour{
+        background-color: #08a34e;
+
+    }
+    .highlight{
+        font-weight:bold;
+        color: #921616;;
+    }
+    tfont{
+        background-color:#290404;
+        font-weight:bold;
+    }
+    </style>
+    </head>
+    <body>
+        <h1 style ="text-align:center;">
+            timetable</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day/Time</th>
+                        <th>08:30-09:25</th>
+                        <th>09:25-10:20</th>
+                        <th>10:20-10:40</th>
+                        <th>10:40-11:35</th>
+                        <th>11:35-12:30</th>
+                        <th>12:30-1:15</th>
+                        <th>1:15-2:10</th>
+                        <th>2:10-3:05</th>
+                        <th>3:05-4:00</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>TOC</td>
+                        <td>CN</td>
+                        <td rowspan="3"class="highlight">
+                         Tea break</td>
+                         <td>software</td>
+                         <td>AI</td>
+                         <td rowspan="5"class="highlight">Lunch break</td>
+                         <td>Software</td>
+                         <td>AI</td>
+                         <td class="elective hour">envinornment</td>
+                    </tr>
+                    <tr>
+                      <td>Tuesday</td>
+                      <td>CN</td>
+                      <td>TOC</td>
+                      
+                
+                       <td class="elective hour">envinornment</td>
+                       <td>placement</td>
+                       <td colspan="3" class="highlight">Project management</td>
+
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CN</td>
+                        <td>web lab</td>
+                       <td colspan="2" class="lab-hour">web lab </td>
+                        <td>software</td>
+                        <td>AI</td>
+                        <td>Research methodalogy</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Research methodalogy</td>
+                        <td>TOC</td>
+                        <td rowspan="3"class="highlight">
+                         Tea break</td>
+                         <td class="elective hour">envinornment</td>
+                        <td>CN</td>
+                        <td>Software</td>
+                        <td>AI</td>
+                        <td>library</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>research methodalogy</td>
+                        <td>CN lab</td>
+                        <td colspan="2" class="highlight">CN lab</td>
+                        <td>placement</td>
+                        <td colspan="2" class="highlight">project management</td>
+                    </tr>
+                    <tr>
+                        <td>saturday</td>
+                        <td>research methodalogy</td>
+                        <td>TOC</td>
+                        <td>CN</td>
+                        <td>Tutorial</td>
+                        <td rowspan="5"class="highlight">Lunch break</td>
+                        <td colspan="3" class="highlight">yoga/nss/sports</td>
+                    </tr>
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="10">End of the Time table</td>
+                    </tr>
+                </tfoot>
+            </table>
+    </body>
+    </html>
